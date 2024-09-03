@@ -8,13 +8,13 @@ by Zhifang Deng, Yangdong Wu.
 
 ![alt](./images/捕获2.svg)
 
-![alt](.\images\捕获3.svg)
+![alt](./images/捕获3.svg)
 
-![alt](.\images\捕获4.svg)
+![alt](./images/捕获4.svg)
 
 #### 2.Results
 
-![alt](.\images\捕获2.JPG)
+![alt](./images/捕获2.JPG)
 
 #### 3.Usage
 
