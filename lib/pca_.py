@@ -1,18 +1,10 @@
-# --------------------------------------------------------
-# Dual Cross Attention
-# Copyright (c) 2023 Gorkem Can Ates
-# Licensed under The MIT License [see LICENSE for details]
-# Written by Gorkem Can Ates (gca45@miami.edu)
-# --------------------------------------------------------
-
 
 import torch
 import torch.nn as nn
 import einops
 from .main_blocks import *
 from .pca_utils import *
-# from main_blocks import *
-# from pca_utils import *
+
 
 
 class ChannelAttention(nn.Module):
@@ -310,7 +302,7 @@ class PCA(nn.Module):
         # out3 = x
         x = self.m_apply(x, self.upconvs)
         # out4 = x
-        x_out = self.m_sum(x, raw)  #似乎是个残差1连接
+        x_out = self.m_sum(x, raw)  
         x_out = self.m_apply(x_out, self.bn_relu)
         # return out1,out2,out3,out4,(*x_out, )      
         return (*x_out, )   
@@ -365,4 +357,3 @@ if __name__ == '__main__':
     print(x2.shape)
     print(x3.shape)
     print(x4.shape)
-#调试完，不要忘记将dca.py and dca_utils.py 的import部分复原

@@ -1,17 +1,9 @@
-# --------------------------------------------------------
-# Dual Cross Attention
-# Copyright (c) 2023 Gorkem Can Ates
-# Licensed under The MIT License [see LICENSE for details]
-# Written by Gorkem Can Ates (gca45@miami.edu)
-# --------------------------------------------------------
-
 
 import torch
 import torch.nn as nn
 import einops
 import matplotlib.pyplot as plt
 from .main_blocks import *
-# from main_blocks import *
 
 def params(module):
     return sum(p.numel() for p in module.parameters())
